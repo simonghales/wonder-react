@@ -1,8 +1,10 @@
 'use strict';
 
-import React         from 'react';
-import {Link}        from 'react-router';
-import DocumentTitle from 'react-document-title';
+import React              from 'react';
+import {Link}             from 'react-router';
+import DocumentTitle      from 'react-document-title';
+
+import TracksList         from '../components/tracks-list/tracks-list';
 
 const propTypes = {
   currentUser: React.PropTypes.object
@@ -17,15 +19,9 @@ class HomePage extends React.Component {
   render() {
     return (
       <DocumentTitle title="Home">
-        <section className="home-page">
+        <section className="page-body page-body--default">
 
-          <div>
-            Home
-          </div>
-
-          <div>
-            <Link to="/search">Search</Link>
-          </div>
+          <TracksList />
 
         </section>
       </DocumentTitle>

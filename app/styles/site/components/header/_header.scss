@@ -1,0 +1,13 @@
+$header____background: map_get($var__colors, trans_background);
+$header____height: map_get($var__sizes, header--height);
+$header____zindex: map_get($var__zindexes, header);
+
+.site__header {
+  background-color: $header____background;
+  height: $header____height;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: $header____zindex;
+}

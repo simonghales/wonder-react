@@ -1,0 +1,5 @@
+$site____background: map_get($var__colors, background);
+
+body {
+  background-color: $site____background;
+}

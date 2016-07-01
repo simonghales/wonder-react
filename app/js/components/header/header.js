@@ -2,7 +2,7 @@
 
 import React              from 'react';
 
-import HeaderInfo             from './header__info/header__info';
+import HeaderInfo         from './header__info/header__info';
 
 import Player             from '../player/player'; // TODO: -- work out why you can't use / path
 import PlayerProgress     from '../player-progress/player-progress';
@@ -15,7 +15,7 @@ class Header extends React.Component {
 
     render() {
         return (
-            <header class="site__header">
+            <header className="site__header">
 
                 <PlayerProgress />
 

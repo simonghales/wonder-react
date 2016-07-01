@@ -1,6 +1,29 @@
-@import 'vars';
-@import 'typography';
-@import 'base';
 
-@import 'elements/header';
-@import 'elements/footer';
+// Resources
+@import 'resources/reset';
+
+// Variables
+@import 'resources/variables/var.color';
+@import 'resources/variables/var.sizes';
+@import 'resources/variables/var.zindexes';
+
+
+// General
+@import 'site/general/base';
+@import 'site/general/general';
+@import 'site/general/typography';
+
+// Pages
+@import 'site/pages/page';
+
+
+// Components
+@import 'site/components/header/header';
+
+@import 'site/components/player/player';
+
+@import 'site/components/footer/footer';
+
+@import 'site/components/tracks-list/tracks-list';
+
+@import 'site/components/track/track';

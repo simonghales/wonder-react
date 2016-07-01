@@ -1,0 +1,9 @@
+$page-body____top-padding: map_get($var__sizes, header--height);
+
+.page-body {
+
+  &.page-body--default {
+    padding-top: $page-body____top-padding;
+  }
+
+}

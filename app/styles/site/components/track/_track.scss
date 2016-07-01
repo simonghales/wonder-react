@@ -1,0 +1,46 @@
+.track-wrapper {
+  cursor: pointer;
+  padding: 1px;
+}
+
+  .track {
+    border: 2px solid #ffffff;
+    background-color: #f0f0f0;
+
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+
+    .track-wrapper:hover & {
+      border-color: blue;
+    }
+
+  }
+
+    .track__top-left,
+    .track__top-right {
+      position: absolute;
+      top: 0;
+    }
+
+    .track__top-left {
+      left: 0;
+    }
+
+    .track__top-right {
+      right: 0;
+    }
+
+    .track__bottom {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+      .track__bottom-right {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
