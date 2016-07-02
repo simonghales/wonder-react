@@ -1,0 +1,37 @@
+$track__overlay-top____height: 100px;
+%track__overlay-top {
+  background-image: url(/images/assets/wonder__top-shadow.png);
+  @include image-2x('/images/assets/wonder__top-shadow@2x.png', 50px, $track__overlay-top____height);
+  height: $track__overlay-top____height;
+}
+
+%track__overlay-top--highlight {
+  background-image: url(/images/assets/wonder__top-shadow--active.png);
+  @include image-2x('/images/assets/wonder__top-shadow--active@2x.png', 50px, $track__overlay-top____height);
+}
+
+$track__overlay-bottom____height: 140px;
+%track__overlay-bottom {
+  background-image: url(/images/assets/wonder__bottom-shadow.png);
+  @include image-2x('/images/assets/wonder__bottom-shadow@2x.png', 50px, $track__overlay-bottom____height);
+  height: $track__overlay-bottom____height;
+}
+
+%track__overlay-bottom--highlight {
+  background-image: url(/images/assets/wonder__bottom-shadow--active.png);
+  @include image-2x('/images/assets/wonder__bottom-shadow--active@2x.png', 50px, $track__overlay-bottom____height);
+}
+
+%track____showOnHover {
+  @include transition(opacity 250ms ease);
+  opacity: 0;
+
+  .track-wrapper:hover & {
+    opacity: 1;
+  }
+
+}
+
+%track____active {
+  border-color: #0040fa;
+}

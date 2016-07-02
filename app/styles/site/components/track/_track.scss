@@ -1,46 +1,121 @@
+
+$track____offset: 15px;
+
 .track-wrapper {
   cursor: pointer;
   padding: 1px;
 }
 
   .track {
-    border: 2px solid #ffffff;
     background-color: #f0f0f0;
+    border: 2px solid #ffffff;
+    color: #ffffff;
 
     height: 100%;
     width: 100%;
 
     position: relative;
 
+    .track-wrapper.state--active &,
     .track-wrapper:hover & {
-      border-color: blue;
+      @extend %track____active;
     }
 
   }
 
+    .track__image {
+      width: 100%;
+      height: 100%;
+    }
+
+    .track__overlay-full,
+    .track__overlay-top,
+    .track__overlay-bottom {
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+
+    .track__overlay-full {}
+
+    .track__overlay-top {
+      @extend %track__overlay-top;
+      top: 0;
+
+      .track-wrapper.state--active & {
+        @extend %track__overlay-top--highlight;
+      }
+
+    }
+
+    .track__overlay-bottom {
+      @extend %track__overlay-bottom;
+      bottom: 0;
+
+      .track-wrapper.state--active & {
+        @extend %track__overlay-bottom--highlight;
+      }
+
+    }
+
     .track__top-left,
     .track__top-right {
       position: absolute;
-      top: 0;
+      top: $track____offset;
     }
 
     .track__top-left {
-      left: 0;
+      left: $track____offset;
     }
 
+      .track__pos {
+        font-size: 42px;
+        font-weight: 700;
+      }
+
     .track__top-right {
-      right: 0;
+      @extend %track____showOnHover;
+      right: $track____offset;
     }
+
+      .track__star {
+        @include border-radius(50%);
+        background-color: #ffffff;
+        width: 35px;
+        height: 35px;
+
+        text-align: center;
+        line-height: 35px;
+      }
 
     .track__bottom {
       position: absolute;
       left: 0;
       right: 0;
       bottom: 0;
+      padding: 0 $track____offset $track____offset $track____offset;
     }
 
       .track__bottom-right {
+        @extend %track____showOnHover;
         position: absolute;
-        right: 0;
-        bottom: 0;
+        right: $track____offset;
+        bottom: $track____offset;
       }
+
+    .track__centre {
+      @extend %track____showOnHover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      width: 60px;
+      height: 60px;
+
+      background-color: #ffffff;
+      @include border-radius(50%);
+      text-align: center;
+      line-height: 60px;
+    }

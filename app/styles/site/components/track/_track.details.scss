@@ -1,0 +1,19 @@
+.track__details {
+  padding-right: 40px;
+}
+
+  .track__title,
+  .track__artist {
+    @extend %truncate;
+  }
+
+  .track__title {
+    font-size: 14px;
+    margin-top: 9px;
+  }
+
+  .track__artist {
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 6px;
+  }

@@ -1,10 +1,10 @@
 
-$track-wrapper____size: 278px;
+$track-wrapper____size: 279px;
 $track-wrapper____size-doubled: $track-wrapper____size * 2;
 
 .tracks-list {
   @extend .clearfix;
-  padding: 0 4px;
+  padding: 0 2px;
 
   .track-wrapper {
     float: left;
@@ -12,7 +12,7 @@ $track-wrapper____size-doubled: $track-wrapper____size * 2;
     width: $track-wrapper____size;
     height: $track-wrapper____size;
 
-    &:first-of-type { // temporary, to be replaced with a class
+    &.track-wrapper--large {
       width: $track-wrapper____size-doubled;
       height: $track-wrapper____size-doubled;
     }

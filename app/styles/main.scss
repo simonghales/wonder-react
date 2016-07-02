@@ -1,5 +1,6 @@
 
 // Resources
+@import 'resources/mixins';
 @import 'resources/reset';
 
 // Variables
@@ -26,4 +27,7 @@
 
 @import 'site/components/tracks-list/tracks-list';
 
+@import 'site/components/track/track.extends';
 @import 'site/components/track/track';
+@import 'site/components/track/track.details';
+@import 'site/components/track/track.options';

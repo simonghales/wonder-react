@@ -6,27 +6,27 @@ const config = {
   UIPort: 3001,
 
   scripts: {
-    src: './app/js/**/*.js',
-    dest: './build/js/',
-    test: './tests/**/*.js',
-    gulp: './gulp/**/*.js'
+    src: 'app/js/**/*.js',
+    dest: 'build/js/',
+    test: 'tests/**/*.js',
+    gulp: 'gulp/**/*.js'
   },
 
   images: {
-    src: './app/images/**/*.{jpeg,jpg,png,gif}',
-    dest: './build/images/'
+    src: 'app/images/**/*.{jpeg,jpg,png,gif}',
+    dest: 'build/images/'
   },
 
   styles: {
-    src: './app/styles/**/*.scss',
-    dest: './build/css/'
+    src: 'app/styles/**/*.scss',
+    dest: 'build/css/'
   },
 
-  sourceDir: './app/',
+  sourceDir: 'app/',
 
-  buildDir: './build/',
+  buildDir: 'build/',
 
-  testFiles: './tests/**/*.{js,jsx}',
+  testFiles: 'tests/**/*.{js,jsx}',
 
   assetExtensions: [
     'js',
