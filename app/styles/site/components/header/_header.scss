@@ -1,6 +1,7 @@
 $header____background: map_get($var__colors, trans_background);
 $header____height: map_get($var__sizes, header--height);
 $header____zindex: map_get($var__zindexes, header);
+$player-progress____height: map_get($var__sizes, player-progress--height);
 
 .site__header {
   background-color: $header____background;
@@ -11,3 +12,18 @@ $header____zindex: map_get($var__zindexes, header);
   right: 0;
   z-index: $header____zindex;
 }
+
+  .site__header__main {
+    position: relative;
+    height: $header____height - $player-progress____height;
+  }
+
+    .site__header__info-wrapper {
+      overflow: hidden;
+    }
+
+    .site__header__player-wrapper {
+      position: absolute;
+      top: 14px;
+      right: 25px;
+    }

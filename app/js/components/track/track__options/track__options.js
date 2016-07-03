@@ -14,13 +14,15 @@ class TrackOptions extends React.Component {
             <div className="track__options">
                 <div className="track__options__icon">:</div>
                 <ul className="track__options__list">
-                    <li>
+                    <li className="option">
                         Star Track
                     </li>
-                    <li>
+                    <li className="divider"></li>
+                    <li className="option">
                         Share
                     </li>
-                    <li>
+                    <li className="divider"></li>
+                    <li className="option">
                         More Like This
                     </li>
                 </ul>

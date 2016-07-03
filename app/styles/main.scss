@@ -7,6 +7,7 @@
 @import 'resources/variables/var.color';
 @import 'resources/variables/var.sizes';
 @import 'resources/variables/var.zindexes';
+@import 'resources/variables/var.spritesheets';
 
 
 // General
@@ -20,8 +21,11 @@
 
 // Components
 @import 'site/components/header/header';
+@import 'site/components/header/header.info';
 
 @import 'site/components/player/player';
+
+@import 'site/components/player-progress/player-progress';
 
 @import 'site/components/footer/footer';
 

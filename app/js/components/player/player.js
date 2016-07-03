@@ -10,9 +10,20 @@ class Player extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="player state--disabled">
 
-                Player
+                <div className="player__btn player__btn--star">
+                    <div className="player__btn__icon"></div>
+                </div>
+                <div className="player__btn player__btn--share">
+                    <div className="player__btn__icon"></div>
+                </div>
+                <div className="player__btn player__btn--toggle">
+                    <div className="player__btn__icon"></div>
+                </div>
+                <div className="player__btn player__btn--skip">
+                    <div className="player__btn__icon"></div>
+                </div>
 
             </div>
         );

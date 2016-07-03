@@ -1,0 +1,5 @@
+$player-progress____height: map_get($var__sizes, player-progress--height);
+
+.player-progress {
+  height: $player-progress____height;
+}

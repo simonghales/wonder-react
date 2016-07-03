@@ -10,10 +10,7 @@ class PlayerProgress extends React.Component {
 
     render() {
         return (
-            <div>
-
-                Player Progress Bar
-
+            <div className="player-progress">
             </div>
         );
     }

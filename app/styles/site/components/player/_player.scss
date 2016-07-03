@@ -1,0 +1,80 @@
+.player {
+  @extend .clearfix;
+}
+
+  .player__btn {
+
+    cursor: pointer;
+    height: 44px;
+    width: 30px;
+    float: left;
+    margin-right: 20px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    .player__btn__icon {
+      @extend %spritesheet-main;
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+
+  .player__btn--star {
+
+    .player__btn__icon {
+      background-position: -292px 0;
+
+      .player.state--disabled & {
+        background-position: -292px 0;
+        cursor: default;
+      }
+
+    }
+
+  }
+
+  .player__btn--share {
+
+    .player__btn__icon {
+      background-position: -343px -120px;
+
+      .player.state--disabled & {
+        background-position: -343px -120px;
+        cursor: default;
+      }
+
+    }
+
+  }
+
+  .player__btn--toggle {
+    width: 44px;
+
+    .player__btn__icon {
+      background-position: -501px 0;
+
+      &:hover {
+        background-position: -501px -60px;
+      }
+
+    }
+
+  }
+
+  .player__btn--skip {
+
+    .player__btn__icon {
+      background-position: -458px -120px;
+
+      .player.state--disabled & {
+        background-position: -458px -120px;
+        cursor: default;
+      }
+
+    }
+
+  }
+

@@ -1,0 +1,98 @@
+$header____height: map_get($var__sizes, header--height);
+$player-progress____height: map_get($var__sizes, player-progress--height);
+
+$site__header__nav____height: $header____height - $player-progress____height;
+
+.site__header__info {
+  @extend .clearfix;
+}
+
+  .site__header__social-link,
+  .site__header__nav,
+  .site__header__logo {
+    float: left;
+  }
+
+  .site__header__nav {
+    cursor: pointer;
+    height: $site__header__nav____height;
+    width: $site__header__nav____height;
+
+    &:hover {
+
+      .icon {
+        background-position: -691px -60px;
+      }
+
+    }
+
+    .icon {
+      @extend %spritesheet-main;
+      background-position: -691px 0;
+      width: 25px;
+      height: 17px;
+      margin: 30px auto 0;
+    }
+
+  }
+
+  .site__header__logo {
+    height: $site__header__nav____height;
+    margin-right: 18px;
+
+    > a {
+      display: block;
+      height: 100%;
+      padding-top: 24px;
+    }
+
+    .icon {
+      @extend %spritesheet-main;
+      background-position: -743px 0;
+      width: 108px;
+      height: 22px;
+    }
+
+  }
+
+  .site__header__social-link {
+    height: $site__header__nav____height;
+
+    > a {
+      display: block;
+      height: 100%;
+      padding: 25px 13px 0;
+    }
+
+    .icon {
+      @extend %spritesheet-main;
+      width: 22px;
+      height: 24px;
+    }
+
+    &.site__header__social-link--twitter {
+
+      &:hover .icon {
+        background-position: -573px -183px;
+      }
+
+      .icon {
+        background-position: -573px -117px;
+      }
+
+    }
+
+    &.site__header__social-link--soundcloud {
+
+      &:hover .icon {
+        background-position: -632px -183px;
+      }
+
+      .icon {
+        background-position: -632px -117px;
+        width: 30px;
+      }
+
+    }
+
+  }

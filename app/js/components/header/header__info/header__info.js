@@ -10,9 +10,29 @@ class HeaderInfo extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="site__header__info">
 
-                Info
+                <div className="site__header__nav">
+                    <div className="icon"></div>
+                </div>
+
+                <div className="site__header__logo">
+                    <a href="">
+                        <div className="icon"></div>
+                    </a>
+                </div>
+
+                <div className="site__header__social-link site__header__social-link--twitter">
+                    <a href="">
+                        <div className="icon"></div>
+                    </a>
+                </div>
+
+                <div className="site__header__social-link site__header__social-link--soundcloud">
+                    <a href="">
+                        <div className="icon"></div>
+                    </a>
+                </div>
 
             </div>
         );

@@ -1,1 +1,53 @@
-// boop
+.track__options {
+  position: relative;
+}
+
+  .track__options__icon {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    z-index: 50 + 2;
+
+    .track__options:hover & {
+      color: #000000;
+    }
+
+  }
+
+  .track__options__list {
+    @include border-radius(3px);
+    @include box-shadow(0, 0, 5px, rgba(0,0,0,0.3));
+    display: none;
+    background-color: #ffffff;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 150px;
+    z-index: 50;
+    margin-top: -24px;
+    padding: 15px;
+    color: #000000;
+    cursor: default;
+    font-size: 13px;
+
+    .track__options:hover & {
+      display: block;
+    }
+
+    .divider {
+      width: 20px;
+      height: 1px;
+      background-color: #dcdcdc;
+      margin: 14px 0;
+    }
+
+    .option {
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+    }
+
+  }

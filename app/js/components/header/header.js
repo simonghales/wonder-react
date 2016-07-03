@@ -19,15 +19,15 @@ class Header extends React.Component {
 
                 <PlayerProgress />
 
-                <div>
+                <div className="site__header__main">
 
-                    <div>
+                    <div className="site__header__info-wrapper">
 
                         <HeaderInfo />
 
                     </div>
 
-                    <div>
+                    <div className="site__header__player-wrapper">
 
                         <Player />
 
