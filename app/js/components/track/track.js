@@ -1,8 +1,10 @@
 'use strict';
 
+var classNames =            require('classnames');
+
 import React                from 'react';
 import TrackOptions         from './track__options/track__options';
-var classNames =            require('classnames');
+import CurrentTrackActions  from '../../actions/current-track.actions.react';
 
 class Track extends React.Component {
 

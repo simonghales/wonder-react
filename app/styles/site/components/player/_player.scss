@@ -2,6 +2,49 @@
   @extend .clearfix;
 }
 
+  .player__info,
+  .player__controls {
+    float: left;
+  }
+
+  .player__info {
+    margin: 15px 25px 0 0;
+
+    .player.state--empty & {
+      visibility: hidden;
+    }
+
+  }
+
+    .player__info__text {
+      color: #222;
+      font-size: 14px;
+      font-weight: 600;
+      padding-bottom: 2px;
+
+      .title {}
+
+      .divider {
+        display: inline-block;
+        width: 16px;
+        height: 2px;
+        background-color: #0040fa;
+        position: relative;
+        top: -4px;
+        margin: 0 8px;
+      }
+
+      .artist {
+        color: #0040fa;
+      }
+
+    }
+
+  .player__controls {
+    @extend .clearfix;
+  }
+
+
   .player__btn {
 
     cursor: pointer;
@@ -27,6 +70,10 @@
     .player__btn__icon {
       background-position: -292px 0;
 
+      &:hover {
+        background-position: -292px -60px;
+      }
+
       .player.state--disabled & {
         background-position: -292px 0;
         cursor: default;
@@ -39,7 +86,11 @@
   .player__btn--share {
 
     .player__btn__icon {
-      background-position: -343px -120px;
+      background-position: -343px 0;
+
+      &:hover {
+        background-position: -343px -60px;
+      }
 
       .player.state--disabled & {
         background-position: -343px -120px;
@@ -67,7 +118,11 @@
   .player__btn--skip {
 
     .player__btn__icon {
-      background-position: -458px -120px;
+      background-position: -458px 0;
+
+      &:hover {
+        background-position: -458px -60px;
+      }
 
       .player.state--disabled & {
         background-position: -458px -120px;

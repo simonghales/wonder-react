@@ -7,10 +7,17 @@ import HeaderInfo         from './header__info/header__info';
 import Player             from '../player/player'; // TODO: -- work out why you can't use / path
 import PlayerProgress     from '../player-progress/player-progress';
 
+import CurrentTrackStore  from '../../stores/current-track.store.react';
+import TracksStore        from '../../stores/tracks.store.react';
+
 class Header extends React.Component {
 
     constructor(props) {
         super(props);
+    }
+
+    componentDidMount() {
+
     }
 
     render() {

@@ -4,6 +4,8 @@ import React              from 'react';
 import {Link}             from 'react-router';
 import DocumentTitle      from 'react-document-title';
 
+import Header             from '../components/header/header';
+import Footer             from '../components/footer/footer';
 import TracksList         from '../components/tracks-list/tracks-list';
 
 const propTypes = {
