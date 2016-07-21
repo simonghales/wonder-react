@@ -1,9 +1,9 @@
 'use strict';
 
 import React                from 'react';
-
+import { connect }          from 'react-redux';
 import Track                from '../track/track';
-import TracksActions         from '../../actions/tracks.actions.react';
+import TracksActions        from '../../actions/tracks.actions.react';
 import TracksStore          from '../../stores/tracks.store.react';
 
 class TracksList extends React.Component {
@@ -35,7 +35,9 @@ class TracksList extends React.Component {
 
     render() {
 
-        var tracks = this.state.tracks;
+        console.log("what's in props?", this.props);
+
+        var tracks = this.props.tracks;
         var tracksComponents = [];
 
         for (let i = 0, len = tracks.length; i < len; i++) {
@@ -55,3 +57,13 @@ class TracksList extends React.Component {
 }
 
 export default TracksList;
+
+const mapStateToProps = (state) => {
+    const tracks = state.tracks.get('tracks');
+    console.log("what's on tracks", tracks);
+    return {
+        tracks: state.tracks.get('tracks')
+    }
+}
+
+export const TracksListContainer = connect(mapStateToProps)(TracksList);

@@ -1,10 +1,19 @@
 import { Map, fromJS } from 'immutable';
 
 export const INITIAL_STATE = fromJS({
-    modal: {},
-    playedTracks: [],
-    player: {},
-    selectedTrack: null,
-    starredTracks: [],
-    tracks: [],
+    tracks: {
+        playedTracks: [],
+        selectedTrack: null,
+        starredTracks: [],
+        tracks: [{
+            'title': 'boop'
+        }],
+    },
+    modal: {
+        selected: ''
+    },
+    player: {
+        state: ''
+    },
 });
+

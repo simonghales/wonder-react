@@ -2,7 +2,9 @@ import { PLAYER_TOGGLE, PLAYER_PLAY, PLAYER_PAUSE, PLAYER_SKIP } from '../consta
 import * as playerFunctions from '../storeFunctions/player'
 import { INITIAL_STATE } from '../core'
 
-export default function player(state = INITIAL_STATE, action) {
+console.log("init state?", INITIAL_STATE);
+
+export default function player(state = INITIAL_STATE.get('player'), action) {
     switch (action.type) {
         case PLAYER_TOGGLE:
             return playerFunctions.playerToggle(state)

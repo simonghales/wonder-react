@@ -4,8 +4,8 @@ import player from './player'
 import tracks from './tracks'
 
 const rootReducer = combineReducers({
-    modal,
     player,
+    modal,
     tracks
 })
 

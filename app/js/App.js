@@ -64,7 +64,6 @@ class App extends React.Component {
 
         <Header />
 
-
         {this.renderChildren()}
 
         <Footer />

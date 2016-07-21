@@ -1,12 +1,11 @@
 'use strict';
 
-import React              from 'react';
-import {Link}             from 'react-router';
-import DocumentTitle      from 'react-document-title';
+import React                           from 'react';
+import {Link}                          from 'react-router';
+import DocumentTitle                   from 'react-document-title';
+import { TracksListContainer }         from '../components/tracks-list/tracks-list';
 
-import Header             from '../components/header/header';
-import Footer             from '../components/footer/footer';
-import TracksList         from '../components/tracks-list/tracks-list';
+const tracksData = require('../data/tracks.json');
 
 const propTypes = {
   currentUser: React.PropTypes.object
@@ -23,7 +22,7 @@ class HomePage extends React.Component {
       <DocumentTitle title="Home">
         <section className="page-body page-body--default">
 
-          <TracksList />
+          <TracksListContainer />
 
         </section>
       </DocumentTitle>
